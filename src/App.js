@@ -1,8 +1,14 @@
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import Burger from "../src/common/Burger";
+import GlobalStyle from "./themes/GlobalStyles";
 
-function App() {
+const App = () => {
   return (
-    <div>
-    </div>
+    <ThemeProvider>
+      <GlobalStyle />
+      <Burger />
+    </ThemeProvider>
   );
 }
 

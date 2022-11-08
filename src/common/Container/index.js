@@ -1,8 +1,11 @@
 import React from "react";
+import { FullPageContainer } from "./styled";
 
-const Container = () => {
-    return(
-        <></>
+const Container = ({ children }) => {
+    return (
+        <FullPageContainer>
+            {children}
+        </FullPageContainer>
     )
 };
 

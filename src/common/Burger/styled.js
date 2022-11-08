@@ -3,15 +3,19 @@ import styled from "styled-components";
 export const BurgerButton = styled.button`
     display: none;
 
-    @media(max-width: ${({thme}) => thme.breakpoints.medium}px){
+    @media(max-width: ${({theme}) => theme.breakpoints.medium}px){
         display: block;
         position: absolute;
+        top: 10px;
+        right: 10px; 
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         width: 32px;
         height: 32px;
-        background: black;
+        padding: 0;
+        background: transparent;
+        border: none;
     }
 `;
 
@@ -25,10 +29,10 @@ export const BurgerBody = styled.div`
     transform-origin: 1px;
 
     :first-child {
-      transform: ${({ active }) => active ? 'rotate(45deg)' : 'rotate(0)'};
+      transform: ${({ active }) => active ? 'rotate(30deg)' : 'rotate(0)'};
     }
 
     :nth-child(2) {
-      transform: ${({ active }) => active ? 'rotate(-45deg)' : 'rotate(0)'};
+      transform: ${({ active }) => active ? 'rotate(-30deg)' : 'rotate(0)'};
     }
 `;

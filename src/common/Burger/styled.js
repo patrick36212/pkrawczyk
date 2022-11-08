@@ -5,9 +5,7 @@ export const BurgerButton = styled.button`
 
     @media(max-width: ${({theme}) => theme.breakpoints.medium}px){
         display: block;
-        position: absolute;
-        top: 10px;
-        right: 10px; 
+        margin: 0 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -16,6 +14,7 @@ export const BurgerButton = styled.button`
         padding: 0;
         background: transparent;
         border: none;
+        z-index: 2;
     }
 `;
 

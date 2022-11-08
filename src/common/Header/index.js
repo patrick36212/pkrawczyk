@@ -1,8 +1,13 @@
 import React from "react";
+import Burger from "../Burger";
+import { HeaderWrapper } from "./styled";
 
-const Header = () => {
-    return(
-        <></>
+const Header = ({ navigation }) => {
+    return (
+        <HeaderWrapper>
+            <Burger />
+            {navigation}
+        </HeaderWrapper>
     )
 };
 

@@ -4,9 +4,10 @@ export const BurgerButton = styled.button`
     display: none;
 
     @media(max-width: ${({theme}) => theme.breakpoints.medium}px){
-        display: block;
-        margin: 0 10px;
         display: flex;
+        position: fixed;
+        top: 10px;
+        right: 10px;
         flex-direction: column;
         justify-content: space-around;
         width: 32px;

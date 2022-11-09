@@ -1,17 +1,14 @@
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
-    width: 99%;
-    max-height: 10vh;
-    margin: 10px;
+    margin: 10px auto;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     background: transparent;
-    position: fixed;
+    position: absolute;
 
     @media(max-width: ${({theme}) => theme.breakpoints.medium}px) {
-        max-height: 100vh;
         margin: 0;
     }
 `;

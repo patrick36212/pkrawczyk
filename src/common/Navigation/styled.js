@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 export const NavigationWrapper = styled.nav`
     display: flex;
     align-items: center;
+    margin: auto;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.medium}px) {
         width: 100%;

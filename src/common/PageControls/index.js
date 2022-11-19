@@ -1,13 +1,14 @@
 import React from "react";
 import { ControlsWrapper, StyledControl } from "./styled";
 
-const PageControls = ({ active, onClick }) => {
+const PageControls = () => {
 
     return (
         <ControlsWrapper>
-            <StyledControl active={active} onClick={onClick} />
-            <StyledControl active={active} onClick={onClick} />
-            <StyledControl active={active} onClick={onClick} />
+            <StyledControl active />
+            <StyledControl />
+            <StyledControl />
+            <StyledControl />
         </ControlsWrapper>
     );
 };

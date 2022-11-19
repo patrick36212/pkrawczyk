@@ -6,9 +6,4 @@ export const PageSection = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-
-    &:nth-child(even) {
-        background-color: teal;
-        color: whitesmoke;
-    }
 `;

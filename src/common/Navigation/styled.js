@@ -1,9 +1,9 @@
 import styled, { css } from "styled-components";
 
-export const NavigationWrapper = styled.nav`
+export const NavigationWrapper = styled.div`
     display: flex;
     align-items: center;
-    margin: auto;
+    width: 50vw;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.medium}px) {
         width: 100%;
@@ -19,8 +19,17 @@ export const NavigationWrapper = styled.nav`
     }
 `;
 
-export const NavigaionLink = styled.a`
-    font-size: 1.5em;
+export const NavigationLinkWrapper = styled.nav`
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+`;
+
+export const NavigaionLink = styled.span`
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
     padding: 0 10px;
     cursor: pointer;
 
@@ -29,11 +38,6 @@ export const NavigaionLink = styled.a`
     }
 
     &:hover {
-        border-bottom: 1px solid;
-    }
-
-    &:active {
-        color: teal;
-        border-bottom: 1px solid;
+        border-bottom: 1px solid ${({ theme }) => theme.color.mainFont};
     }
 `;

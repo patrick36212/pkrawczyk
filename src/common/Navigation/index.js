@@ -1,16 +1,19 @@
 import React from "react";
 import ThemeSwitch from "../ThemeSwitch";
-import { NavigaionLink, NavigationWrapper } from "./styled";
+import { NavigaionLink, NavigationLinkWrapper, NavigationWrapper } from "./styled";
 
-const Navigation = ({ openNav, about, projects, contact }) => {
+const Navigation = ({ openNav }) => {
     return (
         <NavigationWrapper openNav={openNav}>
-            <NavigaionLink>{about}</NavigaionLink>
-            <NavigaionLink>{projects}</NavigaionLink>
-            <NavigaionLink>{contact}</NavigaionLink>
+            <NavigationLinkWrapper>
+                <NavigaionLink>{"About"}</NavigaionLink>
+                <NavigaionLink>{"Skills"}</NavigaionLink>
+                <NavigaionLink>{"Projects"}</NavigaionLink>
+                <NavigaionLink>{"Contact"}</NavigaionLink>
+            </NavigationLinkWrapper>
             <ThemeSwitch />
         </NavigationWrapper>
-    )
+    );
 };
 
 export default Navigation;

@@ -7,10 +7,15 @@ const breakpoints = {
 
 export const lightMode = {
     breakpoints,
-    colors,
 };
 
 export const darkMode = {
     breakpoints,
-    colors,
+    color: {
+        mainBackground: '#E5E5E5',
+        secondaryBacground: '#D9D9D9',
+        darkerSecondaryBackground: '#C8C8C8',
+        mainFont: '#484848', 
+        secondaryFont: '#000000',
+    }
 };

@@ -2,8 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     html {
-        background-color: black;
-        color: white;
         box-sizing: border-box;  
     }
 
@@ -12,9 +10,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        font-family: 'Bebas Neue', cursive;
+        font-family: 'Inter', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        background-color: ${({theme}) => theme.color.mainBackground};
+        color: ${({theme}) => theme.color.mainFont};
     }
 `;
 

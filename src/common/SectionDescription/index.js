@@ -1,12 +1,13 @@
 import React from "react";
-import { SectionDescriptionParagraph, SectionDescriptionTitle} from "./styled";
+import { SectionDescriptionParagraph, SectionDescriptionTitle, SectionDescriptionWrapper } from "./styled";
 
-const SectionDescription = ({ sectionDescription, sectionTitle }) => {
+const SectionDescription = ({ sectionDescription, sectionTitle, additionalContent }) => {
     return (
-        <div>
+        <SectionDescriptionWrapper>
             <SectionDescriptionTitle>{sectionTitle}</SectionDescriptionTitle>
             <SectionDescriptionParagraph>{sectionDescription}</SectionDescriptionParagraph>
-        </div>
+            {additionalContent}
+        </SectionDescriptionWrapper>
     );
 };
 

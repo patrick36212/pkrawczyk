@@ -1,5 +1,9 @@
 import styled from "styled-components"
 
+export const SectionDescriptionWrapper = styled.article`
+    max-width: 626px;
+`;
+
 export const SectionDescriptionTitle = styled.h2`
     text-transform: uppercase;
     font-size: 36px;

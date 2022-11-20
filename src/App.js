@@ -9,6 +9,8 @@ import Header from "./common/Header";
 import Navigation from "./common/Navigation";
 import About from "./features/About";
 import Contact from "./features/Conatct";
+import Skills from "./features/Skills";
+import Vector from "./common/ScrollButton/styled";
 
 const App = () => {
 
@@ -23,7 +25,7 @@ const App = () => {
           <About />
         </Section>
         <Section>
-
+          <Skills />
         </Section>
         <Section>
 
@@ -31,6 +33,8 @@ const App = () => {
         <Section>
           <Contact />
         </Section>
+        <Vector up />
+        <Vector />
       </Container>
     </ThemeProvider>
   );

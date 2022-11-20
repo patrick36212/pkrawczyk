@@ -1,9 +1,11 @@
 import React from "react";
 import { SectionDescriptionParagraph, SectionDescriptionTitle, SectionDescriptionWrapper } from "./styled";
 
-const SectionDescription = ({ sectionDescription, sectionTitle, additionalContent }) => {
+const SectionDescription = ({ sectionDescription, sectionTitle, additionalContent, skills }) => {
     return (
-        <SectionDescriptionWrapper>
+        <SectionDescriptionWrapper
+            skills={skills}
+        >
             <SectionDescriptionTitle>{sectionTitle}</SectionDescriptionTitle>
             <SectionDescriptionParagraph>{sectionDescription}</SectionDescriptionParagraph>
             {additionalContent}

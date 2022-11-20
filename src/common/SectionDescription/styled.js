@@ -1,7 +1,12 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 export const SectionDescriptionWrapper = styled.article`
     max-width: 626px;
+
+    ${({ skills }) => skills && css`
+        max-width: fit-content;
+        max-height: 340px;
+    `};
 `;
 
 export const SectionDescriptionTitle = styled.h2`

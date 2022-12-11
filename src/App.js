@@ -11,6 +11,7 @@ import About from "./features/About";
 import Contact from "./features/Conatct";
 import Skills from "./features/Skills";
 import Vector from "./common/ScrollButton/styled";
+import Projects from "./features/Projects";
 
 const App = () => {
 
@@ -28,7 +29,7 @@ const App = () => {
           <Skills />
         </Section>
         <Section>
-
+          <Projects />
         </Section>
         <Section>
           <Contact />

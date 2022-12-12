@@ -5,10 +5,10 @@ const PageControls = () => {
 
     return (
         <ControlsWrapper>
-            <StyledControl active />
-            <StyledControl />
-            <StyledControl />
-            <StyledControl />
+            <StyledControl href="#about" active />
+            <StyledControl href="#skills" />
+            <StyledControl href="#projects" />
+            <StyledControl href="#contact"  />
         </ControlsWrapper>
     );
 };

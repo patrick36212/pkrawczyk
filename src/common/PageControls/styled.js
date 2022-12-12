@@ -9,7 +9,7 @@ export const ControlsWrapper = styled.div`
     flex-direction: column;
 `;
 
-export const StyledControl = styled.span`
+export const StyledControl = styled.a`
     margin: 5px;
     cursor: pointer;
     height: 15px;

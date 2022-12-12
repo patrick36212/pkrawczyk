@@ -10,7 +10,6 @@ import Navigation from "./common/Navigation";
 import About from "./features/About";
 import Contact from "./features/Conatct";
 import Skills from "./features/Skills";
-import Vector from "./common/ScrollButton/styled";
 import Projects from "./features/Projects";
 
 const App = () => {
@@ -22,20 +21,26 @@ const App = () => {
         <Header
           navigation={<Navigation />}
         />
-        <Section>
+        <Section
+          sectionId="about"
+        >
           <About />
         </Section>
-        <Section>
+        <Section
+          sectionId="skills"
+        >
           <Skills />
         </Section>
-        <Section>
+        <Section
+          sectionId="projects"
+        >
           <Projects />
         </Section>
-        <Section>
+        <Section
+          sectionId="contact"
+        >
           <Contact />
         </Section>
-        <Vector up />
-        <Vector />
       </Container>
     </ThemeProvider>
   );

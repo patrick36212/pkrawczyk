@@ -3,13 +3,14 @@ import ThemeSwitch from "../ThemeSwitch";
 import { NavigaionLink, NavigationLinkWrapper, NavigationWrapper } from "./styled";
 
 const Navigation = ({ openNav }) => {
+
     return (
         <NavigationWrapper openNav={openNav}>
             <NavigationLinkWrapper>
-                <NavigaionLink>{"About"}</NavigaionLink>
-                <NavigaionLink>{"Skills"}</NavigaionLink>
-                <NavigaionLink>{"Projects"}</NavigaionLink>
-                <NavigaionLink>{"Contact"}</NavigaionLink>
+                <NavigaionLink href="#about" >{"About"}</NavigaionLink>
+                <NavigaionLink href="#skills" >{"Skills"}</NavigaionLink>
+                <NavigaionLink href="#projects" >{"Projects"}</NavigaionLink>
+                <NavigaionLink href="#contact" >{"Contact"}</NavigaionLink>
             </NavigationLinkWrapper>
             <ThemeSwitch />
         </NavigationWrapper>

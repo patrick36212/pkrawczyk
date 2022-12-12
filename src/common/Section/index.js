@@ -2,9 +2,9 @@ import React from "react";
 import { PageSection } from "./styled";
 import PageControls from "../PageControls";
 
-const Section = ({ children }) => {
+const Section = ({ children, sectionId }) => {
     return (
-        <PageSection>
+        <PageSection id={sectionId}>
             <PageControls />
             {children}
         </PageSection>
